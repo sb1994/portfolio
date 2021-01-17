@@ -1,0 +1,15 @@
+body {
+  background-color: blue;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: transparent;
+}
+.active-navbar {
+  background-color: green;
+}
+.app-container {
+  height: 2000px;
+}

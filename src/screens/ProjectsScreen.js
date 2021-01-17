@@ -1,10 +1,11 @@
 import React from "react";
+import { Row } from "react-bootstrap";
 
 const ProjectsScreen = () => {
   return (
-    <div>
+    <Row>
       <h1>ProjectsScreen</h1>
-    </div>
+    </Row>
   );
 };
 
