@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HomeScreen from "./screens/HomeScreen";
+import AboutScreen from "./screens/AboutScreen";
+import ProjectsScreen from "./screens/ProjectsScreen";
 
-function App() {
+import { Switch, useLocation, Route } from "react-router-dom";
+
+const App = () => {
+  const location = useLocation();
+  console.log(location);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Switch location={location} key={location.key}>
+        <Route exact path="/">
+          <HomeScreen />
+        </Route>
+        <Route exact path="/projects">
+          <ProjectsScreen />
+        </Route>
+        <Route exact path="/about">
+          <AboutScreen />
+        </Route>
+      </Switch>
+    </>
   );
-}
+};
 
 export default App;
