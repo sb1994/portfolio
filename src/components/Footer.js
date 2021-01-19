@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <Navbar fixed="bottom" className="footer" variant="dark" bg="dark">
       <Container>
-        <Col lg={4} className="text-center">
+        <Col lg={4} sm={4} className="text-center">
           <Navbar.Text>Designed and developed by Seán Boyle </Navbar.Text>
         </Col>
-        <Col lg={4} className="text-center">
+        <Col lg={4} sm={4} className="text-center">
           <Navbar.Text> Copyright &copy; {year} Sb</Navbar.Text>
         </Col>
-        <Col lg={4}>
+        <Col lg={4} sm={4}>
           <ul id="footer__social-list">
             <li className="footer__social-icon mr-2">
               <a

@@ -1,5 +1,5 @@
 body {
-  background-color: #6610f2;
+  background-color: #ffde59;
 }
 .app__container {
   height: 2000px;
@@ -7,19 +7,82 @@ body {
 
 /* Header */
 .navbar {
-  background-color: transparent;
-  color: aliceblue;
+  /* background-color: transparent; */
 }
 .active-navbar {
-  background-color: purple;
-  color: aqua;
+  background-color: #ffde59;
 }
 .active-link {
   border-top: white 1px solid;
 }
-
-/* Footer */
-ul#footer__social-list li {
+/* 
+  Home Page
+*/
+.social-links > ul {
   list-style: none;
-  display: inline;
+  font-size: 50px;
+}
+.social-links > ul > li > a > i {
+  color: black;
+}
+.animation-section__intro {
+  font-size: 25px;
+  padding-top: 50px;
+}
+.animation-section__name {
+  font-size: 120px;
+}
+.animation-section__job {
+  font-size: 80px;
+}
+.animation-section__description {
+  font-size: 25px;
+}
+#btn-work {
+  color: aqua;
+}
+
+/* Projects */
+.tag {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 2px;
+}
+/* Footer */
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  .social-links {
+    display: none;
+  }
+  .animation-section__intro {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+  .animation-section__name {
+    font-size: 90px;
+    padding-top: 1px;
+  }
+  .animation-section__job {
+    font-size: 50px;
+  }
+  .animation-section__description {
+    font-size: 25px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }

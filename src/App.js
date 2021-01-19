@@ -16,26 +16,19 @@ const App = () => {
     <>
       <ScrollToTop />
       <Header />
-      <Container className="app__container">
-        <Row>
-          <AnimatePresence exitBeforeEnter>
-            <Col lg={12} sm={9} className="app__main-content ">
-              <Switch location={location} key={location.key}>
-                <Route exact path="/">
-                  <HomeScreen />
-                </Route>
-                <Route exact path="/about">
-                  <AboutScreen />
-                </Route>
-                <Route path="/projects">
-                  <ProjectsScreen />
-                </Route>
-              </Switch>
-            </Col>
-          </AnimatePresence>
-        </Row>
-      </Container>
-      <Footer />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
+          <Route exact path="/">
+            <HomeScreen />
+          </Route>
+          <Route exact path="/about">
+            <AboutScreen />
+          </Route>
+          <Route path="/projects">
+            <ProjectsScreen />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </>
   );
 };

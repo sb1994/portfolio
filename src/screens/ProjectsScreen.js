@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import ProjectCard from "../components/ProjectCard";
 import data_projects from "../data/projects_data";
 const ProjectsScreen = () => {
+  console.log(process.env.PUBLIC_URL);
   const [projects, setProjects] = useState(data_projects);
   const [active, setActive] = useState("All");
 
@@ -40,50 +42,54 @@ const ProjectsScreen = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="projectContainer col-12"
-      style={{ backgroundColor: "#fff" }}
+      className="projectContainer container-fluid"
     >
-      <div className="projects__navbar">
-        <div
-          className={active === "All" && "projects__navbar-active"}
-          onClick={() => {
-            setProjects(data_projects);
-            setActive("All");
-          }}
+      <Row>
+        <Col lg={1} sm={2} md={2} xs={1} className="social-links mt-4">
+          <ul>
+            <li>
+              <a
+                href="mailto:sean94@gmail.com"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i class="far fa-paper-plane"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/sb1994"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li className="footer__social-icon mr-2">
+              <a
+                href="https://www.linkedin.com/in/se%C3%A1n-boyle-8b2bb5203/"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </Col>
+        <Col
+          lg={11}
+          sm={12}
+          md={10}
+          xs={11}
+          className="projects-section mt-5 text-center"
         >
-          All
-        </div>
-        <div
-          className={active === "react.js" && "projects__navbar-active"}
-          onClick={() => handleFilterCategory("react.js")}
-        >
-          React
-        </div>
-        <div
-          className={active === "mongoDB" && "projects__navbar-active"}
-          onClick={() => handleFilterCategory("mongoDB")}
-        >
-          MongoDB
-        </div>
-        <div
-          className={active === "node.js" && "projects__navbar-active"}
-          onClick={() => handleFilterCategory("node.js")}
-        >
-          Node
-        </div>
-        <div
-          className={active === "vanilla" && "projects__navbar-active"}
-          onClick={() => handleFilterCategory("vanilla")}
-        >
-          Vanilla
-        </div>
-      </div>
-
-      {/* <div className="row">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
-        ))}
-      </div> */}
+          <h1>Projects</h1>
+          <Row>
+            {projects.map((project, index) => (
+              <ProjectCard project={project} key={index} />
+            ))}
+          </Row>
+        </Col>
+      </Row>
     </motion.div>
   );
 };

@@ -28,8 +28,7 @@ const AboutScreen = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="aboutContainer"
-      style={{ backgroundColor: "#fff" }}
+      className="aboutContainer container"
     >
       <h1>About</h1>
     </motion.div>

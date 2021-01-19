@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { useHistory, Link } from "react-router-dom";
 const Header = () => {
   const [activeNavbar, setActiveNavbar] = useState(false);
   const [activeLink, setActiveLink] = useState("");
@@ -30,50 +29,45 @@ const Header = () => {
     <Navbar
       collapseOnSelect
       expand="sm"
-      className={activeNavbar ? "active-navbar" : "navbar"}
+      className={`${activeNavbar ? "active-navbar" : "navbar"}`}
       sticky="top"
       variant="light"
     >
-      <Container>
-        <Navbar.Brand href="/">Sean Boyle</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse
-          className="justify-content-center"
-          id="responsive-navbar-nav"
-        >
-          <Nav className="">
-            <Nav.Item className={activeLink === "Home" ? "active-link" : null}>
-              <Nav.Link href="/">
-                <i
-                  className="fa fa-home mr-1"
-                  onClick={() => setActiveLink("Home")}
-                ></i>
-                Home
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item
-              className={activeLink === "Projects" ? "active-link" : null}
-            >
-              <Nav.Link href="/projects">
-                <i
-                  className="fab fa-codepen mr-1"
-                  onClick={() => setActiveLink("Projects")}
-                ></i>
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item className={activeLink === "About" ? "active-link" : null}>
-              <Nav.Link href="/about">
-                <i
-                  className="far fa-user mr-1"
-                  onClick={() => setActiveLink("About")}
-                ></i>
-                About
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+      <Navbar.Brand href="/">SB</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse className="ml-auto" id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Item className={activeLink === "Home" ? "active-link" : null}>
+            <Nav.Link href="/">
+              <i
+                className="fa fa-home mr-1"
+                onClick={() => setActiveLink("Home")}
+              ></i>
+              Home
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item
+            className={activeLink === "Projects" ? "active-link" : null}
+          >
+            <Nav.Link href="/projects">
+              <i
+                className="fab fa-codepen mr-1"
+                onClick={() => setActiveLink("Projects")}
+              ></i>
+              Projects
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item className={activeLink === "About" ? "active-link" : null}>
+            <Nav.Link href="/about">
+              <i
+                className="far fa-user mr-1"
+                onClick={() => setActiveLink("About")}
+              ></i>
+              About
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };

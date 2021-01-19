@@ -12,7 +12,20 @@ const data_projects = [
     image: "chatapp.JPG",
     deployed_url: "https://sumit-chat.netlify.app/",
     github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: ["node", "socket.io", "react"],
+    category: [
+      "node",
+      "socket.io",
+      "react",
+      "java",
+      "socket.io",
+      "react",
+      "node",
+      "socket.io",
+      "react",
+      "java",
+      "socket.io",
+      "react",
+    ],
   },
 
   {
@@ -34,13 +47,6 @@ const data_projects = [
     name: "Dev Portfolio",
     image: "hardware_store.jpg",
     deployed_url: "http://suprateem.herokuapp.com/",
-    category: ["vanilla"],
-  },
-
-  {
-    name: "Bengali New Year",
-    image: "new_year.jpg",
-    deployed_url: "https://dey-sumit.github.io/NewYear/",
     category: ["vanilla"],
   },
 
