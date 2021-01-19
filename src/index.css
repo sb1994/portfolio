@@ -1,15 +1,25 @@
 body {
-  background-color: blue;
+  background-color: #6610f2;
+}
+.app__container {
+  height: 2000px;
 }
 
-/* navbar */
-
+/* Header */
 .navbar {
   background-color: transparent;
+  color: aliceblue;
 }
 .active-navbar {
-  background-color: green;
+  background-color: purple;
+  color: aqua;
 }
-.app-container {
-  height: 2000px;
+.active-link {
+  border-top: white 1px solid;
+}
+
+/* Footer */
+ul#footer__social-list li {
+  list-style: none;
+  display: inline;
 }
