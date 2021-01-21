@@ -33,41 +33,43 @@ const Header = () => {
       sticky="top"
       variant="light"
     >
-      <Navbar.Brand href="/">SB</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse className="ml-auto" id="responsive-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Item className={activeLink === "Home" ? "active-link" : null}>
-            <Nav.Link href="/">
-              <i
-                className="fa fa-home mr-1"
-                onClick={() => setActiveLink("Home")}
-              ></i>
-              Home
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item
-            className={activeLink === "Projects" ? "active-link" : null}
-          >
-            <Nav.Link href="/projects">
-              <i
-                className="fab fa-codepen mr-1"
-                onClick={() => setActiveLink("Projects")}
-              ></i>
-              Projects
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className={activeLink === "About" ? "active-link" : null}>
-            <Nav.Link href="/about">
-              <i
-                className="far fa-user mr-1"
-                onClick={() => setActiveLink("About")}
-              ></i>
-              About
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
+      <Container fluid>
+        <Navbar.Brand href="/">SB</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse className="ml-auto" id="responsive-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Item className={activeLink === "Home" ? "active-link" : null}>
+              <Nav.Link href="/">
+                <i
+                  className="fa fa-home mr-1"
+                  onClick={() => setActiveLink("Home")}
+                ></i>
+                Home
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item
+              className={activeLink === "Projects" ? "active-link" : null}
+            >
+              <Nav.Link href="/projects">
+                <i
+                  className="fab fa-codepen mr-1"
+                  onClick={() => setActiveLink("Projects")}
+                ></i>
+                Projects
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className={activeLink === "About" ? "active-link" : null}>
+              <Nav.Link href="/about">
+                <i
+                  className="far fa-user mr-1"
+                  onClick={() => setActiveLink("About")}
+                ></i>
+                About
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };

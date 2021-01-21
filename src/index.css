@@ -13,7 +13,7 @@ body {
   background-color: #ffde59;
 }
 .active-link {
-  border-top: white 1px solid;
+  border-top: black 1px solid;
 }
 /* 
   Home Page
@@ -38,20 +38,27 @@ body {
 .animation-section__description {
   font-size: 25px;
 }
-#btn-work {
-  color: aqua;
+.btn-work :hover {
+  background-color: aqua;
 }
 
 /* Projects */
 .tag {
-  color: white;
-  background-color: black;
+  color: black;
   border-radius: 5px;
+  border: black 1px solid;
   padding: 2px;
 }
-/* Footer */
+/* About */
+.about-text p {
+  font-size: 25px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+  .project-card {
+    /* margin-left: 5px; */
+  }
   .social-links {
     display: none;
   }
@@ -73,6 +80,9 @@ body {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .social-links {
+    /* display: none; */
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */

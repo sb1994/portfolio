@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Card, CardDeck, Col, Container, Row } from "react-bootstrap";
 import ProjectCard from "../components/ProjectCard";
 import data_projects from "../data/projects_data";
 const ProjectsScreen = () => {
@@ -42,44 +42,14 @@ const ProjectsScreen = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="projectContainer container-fluid"
+      className="projectContainer container"
     >
       <Row>
-        <Col lg={1} sm={2} md={2} xs={1} className="social-links mt-4">
-          <ul>
-            <li>
-              <a
-                href="mailto:sean94@gmail.com"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                <i class="far fa-paper-plane"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/sb1994"
-                target="_blank"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li className="footer__social-icon mr-2">
-              <a
-                href="https://www.linkedin.com/in/se%C3%A1n-boyle-8b2bb5203/"
-                target="_blank"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </Col>
         <Col
-          lg={11}
+          lg={12}
           sm={12}
           md={10}
-          xs={11}
+          xs={12}
           className="projects-section mt-5 text-center"
         >
           <h1>Projects</h1>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 const HomeScreen = () => {
   const history = useHistory();
   const homeVariants = {
@@ -82,7 +82,7 @@ const HomeScreen = () => {
       className="container-fluid"
     >
       <Row>
-        <Col lg={1} sm={2} md={2} xs={1} className="social-links mt-4">
+        <Col lg={2} sm={2} md={2} xs={1} className="social-links mt-4">
           <ul>
             <li>
               <a
@@ -112,7 +112,7 @@ const HomeScreen = () => {
             </li>
           </ul>
         </Col>
-        <Col lg={11} sm={10} md={10} xs={12} className="animation-section">
+        <Col lg={10} sm={10} md={10} xs={12} className="animation-section">
           <motion.p
             variants={introVariants}
             className="animation-section__intro"
@@ -141,25 +141,12 @@ const HomeScreen = () => {
             variants={subDescriptionVariants}
             className="animation-section__sub-description"
           >
-            This website was created using React.js and custom CSS.
+            This website was created using React.js.
           </motion.p>
           <motion.div className="button-group">
-            <motion.button
-              id="btn-work"
-              className="btn  mr-1"
-              style={{
-                backgroundColor: "black",
-                borderColor: "black",
-                fontSize: 20,
-                color: "#ffde59",
-              }}
-              onClick={() => history.push("/projects")}
-            >
-              My Work
-            </motion.button>
             <motion.a
               href="mailto:sean94@gmail.com"
-              className="btn btn-primary"
+              className="btn btn-primary btn-contact"
               style={{
                 backgroundColor: "black",
                 borderColor: "black",

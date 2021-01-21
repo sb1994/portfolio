@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { Col, Row } from "react-bootstrap";
 const AboutScreen = () => {
   const aboutVariants = {
     hidden: {
@@ -28,9 +28,75 @@ const AboutScreen = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="aboutContainer container"
+      className="aboutContainer container-fluid"
     >
-      <h1>About</h1>
+      <Row>
+        <Col lg={2} sm={2} md={2} xs={12} className="social-links mt-4">
+          <ul style={{ display: "inline-block" }}>
+            <li className="cocial-link">
+              <a
+                href="mailto:sean94@gmail.com"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i class="far fa-paper-plane"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/sb1994"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li className="footer__social-icon mr-2">
+              <a
+                href="https://www.linkedin.com/in/se%C3%A1n-boyle-8b2bb5203/"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </Col>
+        <Col lg={10} sm={10}>
+          <Row>
+            <Col lg={12} className="text-center">
+              <h1>About</h1>
+            </Col>
+            <Col lg={12}>
+              <Row>
+                <Col lg={6} className="about-text">
+                  <p>
+                    Hi I'm Seán, a recent graduate from the Creative Computing
+                    program at Dún Laoghaire Institute of Art, Design and
+                    Technology (IADT){" "}
+                  </p>
+                  <p>
+                    I've always been passionate about technology and programing
+                    since the first time I could interact with a Pc
+                  </p>
+                  <p>
+                    Having the chance to learn and develop myself is what
+                    motivates me more than anything else, and I love being able
+                    to combine my creative side with my problem solving skills.
+                  </p>
+                </Col>
+                <Col lg={6}>
+                  <img
+                    className="img-fluid"
+                    src={`${process.env.PUBLIC_URL}/assets/projects_images/profile_img.jpg`}
+                    alt=""
+                    srcset=""
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </motion.div>
   );
 };

@@ -12,20 +12,7 @@ const data_projects = [
     image: "chatapp.JPG",
     deployed_url: "https://sumit-chat.netlify.app/",
     github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: [
-      "node",
-      "socket.io",
-      "react",
-      "java",
-      "socket.io",
-      "react",
-      "node",
-      "socket.io",
-      "react",
-      "java",
-      "socket.io",
-      "react",
-    ],
+    category: ["node", "socket.io", "react", "java"],
   },
 
   {
