@@ -53,6 +53,9 @@ body {
 .about-text p {
   font-size: 25px;
 }
+.profile_img {
+  border-radius: 1rem;
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {

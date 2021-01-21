@@ -6,8 +6,6 @@ import ProjectsScreen from "./screens/ProjectsScreen";
 import { Switch, useLocation, Route } from "react-router-dom";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
-import { Col, Container, Navbar, Row } from "react-bootstrap";
-import Footer from "./components/Footer";
 import { AnimatePresence } from "framer-motion";
 
 const App = () => {

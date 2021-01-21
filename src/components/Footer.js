@@ -1,6 +1,5 @@
-import { Button } from "bootstrap";
 import React from "react";
-import { Col, Container, FormControl, Nav, Navbar, Row } from "react-bootstrap";
+import { Col, Container, Navbar } from "react-bootstrap";
 const Footer = () => {
   let date = new Date();
   let year = date.getFullYear();
@@ -21,7 +20,7 @@ const Footer = () => {
                 target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
             </li>
             <li className="footer__social-icon mr-2">
@@ -30,7 +29,7 @@ const Footer = () => {
                 target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </li>
           </ul>

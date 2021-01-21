@@ -33,12 +33,12 @@ const AboutScreen = () => {
       <Row>
         <Col lg={2} sm={2} md={2} xs={12} className="social-links mt-4">
           <ul style={{ display: "inline-block" }}>
-            <li className="cocial-link">
+            <li className="social-link">
               <a
                 href="mailto:sean94@gmail.com"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="far fa-paper-plane"></i>
+                <i className="far fa-paper-plane"></i>
               </a>
             </li>
             <li>
@@ -47,7 +47,7 @@ const AboutScreen = () => {
                 target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
             </li>
             <li className="footer__social-icon mr-2">
@@ -56,7 +56,7 @@ const AboutScreen = () => {
                 target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </li>
           </ul>
@@ -86,10 +86,9 @@ const AboutScreen = () => {
                 </Col>
                 <Col lg={6}>
                   <img
-                    className="img-fluid"
-                    src={`${process.env.PUBLIC_URL}/assets/projects_images/profile_img.jpg`}
+                    className="img-fluid pt-1 profile_img"
+                    src={`${process.env.PUBLIC_URL}/assets/profile_img.jpg`}
                     alt=""
-                    srcset=""
                   />
                 </Col>
               </Row>

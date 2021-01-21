@@ -1,20 +1,11 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { Card, CardDeck, Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import ProjectCard from "../components/ProjectCard";
 import data_projects from "../data/projects_data";
 const ProjectsScreen = () => {
-  console.log(process.env.PUBLIC_URL);
   const [projects, setProjects] = useState(data_projects);
-  const [active, setActive] = useState("All");
 
-  const handleFilterCategory = (name) => {
-    const new_array = data_projects.filter((project) =>
-      project.category.includes(name)
-    );
-    setProjects(new_array);
-    setActive(name);
-  };
   const projectVariants = {
     hidden: {
       opacity: 0,
