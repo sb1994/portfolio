@@ -1,5 +1,6 @@
 body {
   background-color: #ffde59;
+  scroll-behavior: smooth;
 }
 .app__container {
   height: 2000px;
@@ -67,7 +68,7 @@ textarea {
 .animation-section__description {
   font-size: 25px;
 }
-.btn-work :hover {
+.btn-work:hover {
   background-color: aqua;
 }
 

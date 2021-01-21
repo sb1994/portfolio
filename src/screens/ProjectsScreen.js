@@ -36,7 +36,7 @@ const ProjectsScreen = () => {
       className="projectContainer container-fluid"
     >
       <Row className="mt-5">
-        <Col lg={2} sm={2} md={2} xs={1} className="social-links mt-5">
+        <Col lg={2} sm={1} md={2} xs={1} className="social-links mt-5">
           <ul>
             <li>
               <a
@@ -68,7 +68,7 @@ const ProjectsScreen = () => {
         </Col>
         <Col
           lg={10}
-          sm={12}
+          sm={11}
           md={10}
           xs={12}
           className="projects-section text-center"

@@ -38,7 +38,11 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="ml-auto" id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Item className={activeLink === "Home" ? "active-link" : null}>
+            <Nav.Item
+              className={` mr-5 ${
+                activeLink === "Home" ? "active-link" : null
+              }`}
+            >
               <Nav.Link href="/" style={{ color: "black" }}>
                 <i
                   className="fa fa-home mr-1"
@@ -48,7 +52,9 @@ const Header = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item
-              className={activeLink === "Projects" ? "active-link" : null}
+              className={` mr-5 ${
+                activeLink === "Projects" ? "active-link" : null
+              }`}
             >
               <Nav.Link href="/projects" style={{ color: "black" }}>
                 <i
@@ -58,17 +64,10 @@ const Header = () => {
                 Projects
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className={activeLink === "About" ? "active-link" : null}>
-              <Nav.Link href="/about" style={{ color: "black" }}>
-                <i
-                  className="far fa-user mr-1"
-                  onClick={() => setActiveLink("About")}
-                ></i>
-                About
-              </Nav.Link>
-            </Nav.Item>
             <Nav.Item
-              className={activeLink === "Resume" ? "active-link" : null}
+              className={`mr-5 ${
+                activeLink === "Resume" ? "active-link" : null
+              }`}
             >
               <Nav.Link href="/resume" style={{ color: "black" }}>
                 <i
@@ -76,6 +75,15 @@ const Header = () => {
                   onClick={() => setActiveLink("Resume")}
                 ></i>
                 Resume
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className={activeLink === "About" ? "active-link" : null}>
+              <Nav.Link href="/about" style={{ color: "black" }}>
+                <i
+                  className="far fa-user mr-1"
+                  onClick={() => setActiveLink("About")}
+                ></i>
+                About
               </Nav.Link>
             </Nav.Item>
           </Nav>

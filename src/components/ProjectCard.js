@@ -27,12 +27,13 @@ const ProjectCard = ({ project }) => {
     >
       <Col lg={12} style={{ border: "2px solid black", borderRadius: "1rem" }}>
         <Card.Body className="text-center">
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
+          <h2>Delv Talk</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            laboriosam nihil facilis sint deleniti, doloremque perspiciatis?
+            Quaerat optio eos numquam illum vero exercitationem officia
+            perferendis, nostrum recusandae quis quod explicabo!
+          </p>
         </Card.Body>
         <Card.Img
           variant="top"
