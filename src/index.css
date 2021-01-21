@@ -5,8 +5,34 @@ body {
   height: 2000px;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+}
+
+p,
+li,
+span,
+label,
+input,
+a,
+textarea {
+  font-family: "Roboto Mono", monospace;
+}
+
 /* Header */
-.navbar {
+.navbar a {
   /* background-color: transparent; */
 }
 .active-navbar {
@@ -14,6 +40,9 @@ body {
 }
 .active-link {
   border-top: black 1px solid;
+}
+.active-link {
+  color: black;
 }
 /* 
   Home Page

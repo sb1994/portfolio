@@ -89,7 +89,7 @@ const HomeScreen = () => {
                 href="mailto:sean94@gmail.com"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="far fa-paper-plane"></i>
+                <i className="far fa-paper-plane"></i>
               </a>
             </li>
             <li>
@@ -98,7 +98,7 @@ const HomeScreen = () => {
                 target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
             </li>
             <li className="footer__social-icon mr-2">
@@ -107,7 +107,7 @@ const HomeScreen = () => {
                 target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <i class="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </li>
           </ul>

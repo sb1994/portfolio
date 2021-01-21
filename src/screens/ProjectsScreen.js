@@ -33,15 +33,45 @@ const ProjectsScreen = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="projectContainer container"
+      className="projectContainer container-fluid"
     >
-      <Row>
+      <Row className="mt-5">
+        <Col lg={2} sm={2} md={2} xs={1} className="social-links mt-5">
+          <ul>
+            <li>
+              <a
+                href="mailto:sean94@gmail.com"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i className="far fa-paper-plane"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/sb1994"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </li>
+            <li className="footer__social-icon mr-2">
+              <a
+                href="https://www.linkedin.com/in/se%C3%A1n-boyle-8b2bb5203/"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </Col>
         <Col
-          lg={12}
+          lg={10}
           sm={12}
           md={10}
           xs={12}
-          className="projects-section mt-5 text-center"
+          className="projects-section text-center"
         >
           <h1>Projects</h1>
           <Row>

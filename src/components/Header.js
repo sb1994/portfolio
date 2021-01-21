@@ -39,7 +39,7 @@ const Header = () => {
         <Navbar.Collapse className="ml-auto" id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Item className={activeLink === "Home" ? "active-link" : null}>
-              <Nav.Link href="/">
+              <Nav.Link href="/" style={{ color: "black" }}>
                 <i
                   className="fa fa-home mr-1"
                   onClick={() => setActiveLink("Home")}
@@ -50,7 +50,7 @@ const Header = () => {
             <Nav.Item
               className={activeLink === "Projects" ? "active-link" : null}
             >
-              <Nav.Link href="/projects">
+              <Nav.Link href="/projects" style={{ color: "black" }}>
                 <i
                   className="fab fa-codepen mr-1"
                   onClick={() => setActiveLink("Projects")}
@@ -59,12 +59,23 @@ const Header = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className={activeLink === "About" ? "active-link" : null}>
-              <Nav.Link href="/about">
+              <Nav.Link href="/about" style={{ color: "black" }}>
                 <i
                   className="far fa-user mr-1"
                   onClick={() => setActiveLink("About")}
                 ></i>
                 About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item
+              className={activeLink === "Resume" ? "active-link" : null}
+            >
+              <Nav.Link href="/resume" style={{ color: "black" }}>
+                <i
+                  className="far fa-file mr-1"
+                  onClick={() => setActiveLink("Resume")}
+                ></i>
+                Resume
               </Nav.Link>
             </Nav.Item>
           </Nav>

@@ -30,8 +30,8 @@ const AboutScreen = () => {
       exit="exit"
       className="aboutContainer container-fluid"
     >
-      <Row>
-        <Col lg={2} sm={2} md={2} xs={12} className="social-links mt-4">
+      <Row className="mt-5">
+        <Col lg={2} sm={2} md={2} xs={12} className="social-links mt-5">
           <ul style={{ display: "inline-block" }}>
             <li className="social-link">
               <a

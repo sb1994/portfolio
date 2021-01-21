@@ -7,6 +7,7 @@ import { Switch, useLocation, Route } from "react-router-dom";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
+import CvScreen from "./screens/CvScreen";
 
 const App = () => {
   const location = useLocation();
@@ -24,6 +25,9 @@ const App = () => {
           </Route>
           <Route path="/projects">
             <ProjectsScreen />
+          </Route>
+          <Route path="/resume">
+            <CvScreen />
           </Route>
         </Switch>
       </AnimatePresence>
