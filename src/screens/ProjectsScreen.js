@@ -74,11 +74,11 @@ const ProjectsScreen = () => {
           className="projects-section text-center"
         >
           <h1>Projects</h1>
-          <Row>
+          {/* <Row>
             {projects.map((project, index) => (
               <ProjectCard project={project} key={index} />
             ))}
-          </Row>
+          </Row> */}
         </Col>
       </Row>
     </motion.div>

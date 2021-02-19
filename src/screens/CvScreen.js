@@ -12,7 +12,7 @@ const CvScreen = () => {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 0.2,
+        delay: 0.1,
         duration: 0.3,
       },
     },
@@ -20,6 +20,7 @@ const CvScreen = () => {
       x: "100vw",
       transition: {
         ease: "easeInOut",
+
         duration: 0.3,
       },
     },
@@ -159,9 +160,7 @@ const CvScreen = () => {
                       <ul style={{ fontSize: "20px" }}>
                         <li className="mr-1">Teamwork</li>
                         <li className="mr-1">Communication</li>
-                        <li className="mr-1">
-                          <span class="fab fa-node"></span> Customer Service
-                        </li>
+                        <li className="mr-1">Customer Service</li>
                       </ul>
                     </Col>
                   </Row>
