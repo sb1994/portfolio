@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
+import "./ProjectCard.css";
 import "../index.css";
 const ProjectCard = ({ project }) => {
   const projectVariants = {
@@ -26,21 +27,46 @@ const ProjectCard = ({ project }) => {
       style={{ backgroundColor: "#ffde59" }}
     >
       <Col lg={12} style={{ border: "2px solid black", borderRadius: "1rem" }}>
-        <Card.Body className="text-center">
-          <h2>Delv Talk</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            laboriosam nihil facilis sint deleniti, doloremque perspiciatis?
-            Quaerat optio eos numquam illum vero exercitationem officia
-            perferendis, nostrum recusandae quis quod explicabo!
-          </p>
+        <Card.Body>
+          <h2>{project.name}</h2>
+          <Card.Img
+            variant="top"
+            className="pb-3"
+            style={{ width: "100%" }}
+            src={`${process.env.PUBLIC_URL}/assets/projects_images/${project.image}`}
+          />
+          <p>{project.description}</p>
+
+          {project.category.map((cat, index) => (
+            <span
+              className="badge badge-dark mr-2  mb-1"
+              style={{ fontSize: "1.05rem" }}
+              key={index}
+            >
+              {cat}
+            </span>
+          ))}
+          <Row className="mt-2">
+            <Col md={12}>
+              <a
+                href={project.deployed_url}
+                target="_blank"
+                className="btn project__btn-live mr-3"
+                style={{ textDecoration: "none" }}
+              >
+                <i class="fas fa-globe"></i> Live
+              </a>
+              <a
+                href={project.github_url}
+                target="_blank"
+                className="btn project__btn-github"
+                style={{ textDecoration: "none" }}
+              >
+                <i className="fab fa-github"></i> Github
+              </a>
+            </Col>
+          </Row>
         </Card.Body>
-        <Card.Img
-          variant="top"
-          className="pb-3"
-          style={{ width: "100%" }}
-          src={`${process.env.PUBLIC_URL}/assets/projects_images/${project.image}`}
-        />
       </Col>
     </motion.div>
   );

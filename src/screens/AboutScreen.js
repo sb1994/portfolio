@@ -75,8 +75,8 @@ const AboutScreen = () => {
                     Technology (IADT){" "}
                   </p>
                   <p>
-                    I've always been passionate about technology and programing
-                    since the first time I could interact with a Pc
+                    I've always been passionate about technology and programming
+                    since the first time I could interact with a PC.
                   </p>
                   <p>
                     Having the chance to learn and develop myself is what

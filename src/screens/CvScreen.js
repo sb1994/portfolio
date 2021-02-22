@@ -36,16 +36,16 @@ const CvScreen = () => {
       <Row>
         <Col lg={12} className="text-center">
           <h1>Skills</h1>
-          {/* <h3>
+          <h3>
             Click{" "}
             <a
               target="_black"
-              // href={`${process.env.PUBLIC_URL}/assets/Sean_Boyle_CV.PDF`}
+              href={`${process.env.PUBLIC_URL}/assets/SeanBoyle_CV.PDF`}
             >
               here
             </a>{" "}
             to download pdf Resume
-          </h3> */}
+          </h3>
         </Col>
       </Row>
       <Row className="mt-5">

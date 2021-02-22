@@ -57,7 +57,7 @@ const ProjectsScreen = () => {
             </li>
             <li className="footer__social-icon mr-2">
               <a
-                href="https://www.linkedin.com/in/se%C3%A1n-boyle-8b2bb5203/"
+                href="https://www.linkedin.com/in/seán-boyle-8b2bb5203/"
                 target="_blank"
                 style={{ color: "white", textDecoration: "none" }}
               >
@@ -74,11 +74,12 @@ const ProjectsScreen = () => {
           className="projects-section text-center"
         >
           <h1>Projects</h1>
-          {/* <Row>
+
+          <Row>
             {projects.map((project, index) => (
-              <ProjectCard project={project} key={index} />
+              <ProjectCard key={index} project={project} />
             ))}
-          </Row> */}
+          </Row>
         </Col>
       </Row>
     </motion.div>
